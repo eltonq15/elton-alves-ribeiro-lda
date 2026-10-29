@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elton Alves Ribeiro Lda | Desenvolvimento de Apps</title>
     <!-- Fonte Inter para um visual moderno e tecnológico -->
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     
     <style>
         :root {
@@ -202,6 +202,151 @@
             border-color: rgba(59, 130, 246, 0.3);
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .nav-link {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: color 0.2s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--text-color);
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: #ffffff;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 0.85rem 1.75rem;
+            border-radius: 9999px;
+            transition: background 0.2s ease, transform 0.2s ease;
+        }
+
+        .btn:hover {
+            background: var(--primary-hover);
+            transform: translateY(-2px);
+        }
+
+        .apps {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem 2rem;
+            scroll-margin-top: 1rem;
+        }
+
+        .apps .section-head {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 2.5rem;
+        }
+
+        .apps .section-head h2 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            letter-spacing: -0.04em;
+            margin-bottom: 0.75rem;
+        }
+
+        .apps .section-head p {
+            color: var(--text-muted);
+            font-weight: 300;
+        }
+
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .app-card {
+            display: flex;
+            gap: 1.25rem;
+            align-items: flex-start;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 1.75rem;
+            border-radius: 12px;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .app-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(59, 130, 246, 0.4);
+        }
+
+        .app-icon {
+            width: 72px;
+            height: 72px;
+            border-radius: 16px;
+            flex: none;
+        }
+
+        .app-title {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-bottom: 0.5rem;
+        }
+
+        .app-title h3 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        .app-status {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--accent);
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.25);
+            padding: 0.15rem 0.6rem;
+            border-radius: 9999px;
+        }
+
+        .app-body p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .app-meta {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .nav-right {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            .app-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .app-card {
+                flex-direction: column;
+            }
+        }
+
         /* Responsividade Básica */
         @media (max-width: 768px) {
             .hero h1 {
@@ -222,13 +367,37 @@
     <!-- Navegação Simples -->
     <nav>
         <div class="logo">Elton Alves Ribeiro Lda</div>
-        <div class="tag-tech">Software Studio</div>
+        <div class="nav-right">
+            <a href="#apps" class="nav-link">Apps</a>
+            <div class="tag-tech">Software Studio</div>
+        </div>
     </nav>
 
     <!-- Componente Hero -->
     <section class="hero">
         <h1>Transformamos Conceitos em <span>Aplicações Móveis</span></h1>
         <p>Desenvolvimento focado em engenharia de software sólida, performance impecável e arquiteturas prontas para as lojas globais.</p>
+        <a href="#apps" class="btn">Ver apps</a>
+    </section>
+
+    <section class="apps" id="apps" aria-labelledby="apps-titulo">
+        <div class="section-head">
+            <h2 id="apps-titulo">Apps</h2>
+            <p>Utilitários digitais criados por nós para iOS e Android.</p>
+        </div>
+        <div class="app-grid">
+            <a class="app-card" href="/4ever-scan/">
+                <img class="app-icon" src="assets/4ever-scan/icon.png" alt="" width="72" height="72">
+                <div class="app-body">
+                    <div class="app-title">
+                        <h3>4ever Scan</h3>
+                        <span class="app-status">Em breve</span>
+                    </div>
+                    <p>Scanner de documentos em PDF. Digitalize, organize em pastas e guarde consigo. Uma compra, sem subscrições.</p>
+                    <span class="app-meta">iOS · Android</span>
+                </div>
+            </a>
+        </div>
     </section>
 
     <!-- Pilares Tecnológicos -->
