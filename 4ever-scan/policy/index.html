@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade | 4ever Scan</title>
+    <meta name="description" content="Política de Privacidade do 4ever Scan: saiba que dados a app acede, como são tratados e quais são os seus direitos.">
+    <link rel="canonical" href="https://eltonalvesribeirolda.com/4ever-scan/policy/">
+    <meta name="theme-color" content="#0E1513">
+    <link rel="icon" type="image/png" href="../../assets/4ever-scan/icon.png">
+    <link rel="apple-touch-icon" href="../../assets/4ever-scan/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0E1513;
+            --surface: #141D1A;
+            --surface-2: #19241F;
+            --border: #22312B;
+            --text: #EEF3F0;
+            --muted: #A7B7B0;
+            --accent: #6FB8A3;
+            --accent-strong: #8ED0BC;
+            --on-accent: #0B1411;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+            line-height: 1.7;
+        }
+        a { color: var(--accent-strong); }
+        :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+        .wrap { max-width: 1040px; margin: 0 auto; padding: 0 1.5rem; }
+        header { border-bottom: 1px solid var(--border); }
+        header .wrap {
+            align-items: center;
+            display: flex;
+            gap: 1rem;
+            justify-content: space-between;
+            padding-bottom: 1.25rem;
+            padding-top: 1.25rem;
+        }
+        .brand { align-items: center; color: var(--text); display: flex; gap: .75rem; font-weight: 800; letter-spacing: -.03em; text-decoration: none; }
+        .brand img { border-radius: 8px; height: 32px; width: 32px; }
+        .back { color: var(--muted); font-size: .9rem; text-decoration: none; }
+        .back:hover { color: var(--text); }
+        .intro { padding: 5rem 0 3rem; position: relative; }
+        .intro::before {
+            background: radial-gradient(circle, rgba(111, 184, 163, .16), transparent 68%);
+            content: '';
+            height: 520px;
+            left: 50%;
+            pointer-events: none;
+            position: absolute;
+            top: -130px;
+            transform: translateX(-50%);
+            width: 680px;
+            z-index: -1;
+        }
+        .eyebrow { color: var(--accent); font-size: .8rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
+        h1 { font-size: clamp(2.4rem, 6vw, 4.2rem); letter-spacing: -.055em; line-height: 1.05; margin: .8rem 0 1.25rem; max-width: 760px; }
+        .lead { color: var(--muted); font-size: 1.15rem; font-weight: 300; max-width: 690px; }
+        .updated { color: var(--muted); font-size: .88rem; margin-top: 1.25rem; }
+        main { padding-bottom: 4rem; }
+        .policy-layout { display: grid; gap: 3rem; grid-template-columns: minmax(0, 1fr) 260px; }
+        article { min-width: 0; }
+        article section { border-top: 1px solid var(--border); padding: 2.5rem 0; }
+        article section:first-child { border-top: 0; padding-top: 0; }
+        h2 { font-size: 1.55rem; letter-spacing: -.03em; line-height: 1.2; margin-bottom: 1rem; }
+        h3 { font-size: 1.05rem; margin: 1.5rem 0 .45rem; }
+        p { color: var(--muted); margin-bottom: 1rem; }
+        p:last-child { margin-bottom: 0; }
+        ul { color: var(--muted); display: grid; gap: .65rem; margin: 1rem 0 0 1.2rem; }
+        li::marker { color: var(--accent); }
+        strong { color: var(--text); font-weight: 600; }
+        .toc { align-self: start; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; position: sticky; top: 1rem; }
+        .toc strong { display: block; font-size: .9rem; margin-bottom: .75rem; }
+        .toc a { display: block; font-size: .88rem; line-height: 1.4; padding: .35rem 0; text-decoration: none; }
+        .toc a:hover { color: var(--text); }
+        .callout { background: var(--surface-2); border: 1px solid rgba(111, 184, 163, .32); border-radius: 12px; margin-top: 1.25rem; padding: 1.25rem; }
+        .callout p { font-size: .95rem; }
+        footer { border-top: 1px solid var(--border); color: var(--muted); font-size: .9rem; padding: 2.5rem 0; }
+        footer .wrap { display: flex; flex-wrap: wrap; gap: 1rem 2rem; justify-content: space-between; }
+        footer a { text-decoration: none; }
+        @media (max-width: 760px) {
+            header .wrap { align-items: flex-start; flex-direction: column; }
+            .intro { padding-top: 3.5rem; }
+            .policy-layout { display: block; }
+            .toc { margin-bottom: 2rem; position: static; }
+            footer .wrap { flex-direction: column; }
+        }
+        @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="wrap">
+            <a class="brand" href="/4ever-scan/">
+                <img src="../../assets/4ever-scan/icon.png" alt="" width="32" height="32">
+                <span>4ever Scan</span>
+            </a>
+            <a class="back" href="/4ever-scan/">← Voltar ao 4ever Scan</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="wrap">
+                <p class="eyebrow">Transparência e controlo</p>
+                <h1>Política de Privacidade</h1>
+                <p class="lead">Esta política explica como o 4ever Scan acede, utiliza, armazena e partilha dados quando digitaliza documentos no seu dispositivo.</p>
+                <p class="updated"><strong>Última atualização:</strong> 30 de outubro de 2026</p>
+            </div>
+        </section>
+
+        <div class="wrap policy-layout">
+            <article>
+                <section id="responsavel">
+                    <h2>1. Quem é responsável</h2>
+                    <p>O responsável pelo 4ever Scan é <strong>Elton Alves Ribeiro Lda</strong> ("nós", "nosso" ou "responsável pelo tratamento").</p>
+                    <p>Para dúvidas sobre esta política, privacidade ou utilização da app, contacte-nos através de <a href="mailto:contato@eltonalvesribeirolda.com?subject=Privacidade%20-%204ever%20Scan">contato@eltonalvesribeirolda.com</a>.</p>
+                </section>
+
+                <section id="dados">
+                    <h2>2. Dados a que a app acede</h2>
+                    <p>O 4ever Scan foi concebido para funcionar localmente, sem conta e sem um servidor de documentos nosso.</p>
+                    <ul>
+                        <li><strong>Câmara:</strong> a app pede acesso à câmara para digitalizar documentos quando inicia uma captura. O acesso depende da sua autorização e pode ser revogado nas definições do dispositivo.</li>
+                        <li><strong>Imagens e PDFs:</strong> as páginas capturadas, os nomes dos documentos e a organização em pastas são processados e guardados no armazenamento privado da app no seu dispositivo.</li>
+                        <li><strong>Dados técnicos:</strong> no Android, o scanner utiliza o Google ML Kit através do Google Play Services. Estes serviços podem tratar dados técnicos e de diagnóstico segundo as políticas da Google. A app não recebe nem utiliza esses dados para criar um perfil seu.</li>
+                    </ul>
+                    <div class="callout">
+                        <p><strong>Não recolhemos diretamente:</strong> não criamos contas, não pedimos nome, e-mail ou telefone para utilizar a app, não recolhemos o conteúdo dos seus documentos para servidores nossos, não utilizamos publicidade personalizada, analytics ou SDKs de rastreio.</p>
+                    </div>
+                </section>
+
+                <section id="utilizacao">
+                    <h2>3. Como utilizamos os dados</h2>
+                    <p>Utilizamos o acesso à câmara e os ficheiros apenas para fornecer as funcionalidades que solicita: capturar páginas, detetar e ajustar contornos, criar PDFs, organizar documentos e permitir a pesquisa pelos nomes que definiu.</p>
+                    <p>O 4ever Scan não analisa o conteúdo dos documentos para publicidade, não o vende e não o envia para nós. A exportação, cópia ou partilha ocorre apenas quando inicia essa ação através das funcionalidades do sistema.</p>
+                </section>
+
+                <section id="partilha">
+                    <h2>4. Partilha com terceiros</h2>
+                    <p>Não vendemos dados pessoais nem partilhamos os seus documentos com terceiros para fins comerciais.</p>
+                    <p>Quando escolhe exportar ou partilhar um PDF, o ficheiro é entregue ao destino que selecionar, como Ficheiros, uma aplicação de cloud, e-mail ou mensagens. Essa transferência é iniciada por si e passa a estar sujeita às políticas do serviço escolhido.</p>
+                    <p>No Android, o Google ML Kit e o Google Play Services são componentes de terceiros utilizados pelo scanner. Consulte a <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Política de Privacidade da Google</a> para saber como a Google trata dados nos seus serviços.</p>
+                </section>
+
+                <section id="armazenamento">
+                    <h2>5. Armazenamento, retenção e eliminação</h2>
+                    <p>Os documentos, PDFs, nomes e pastas permanecem no armazenamento privado da app no dispositivo até que os elimine, limpe os dados da app ou desinstale a app. Não mantemos uma cópia desses ficheiros nos nossos servidores.</p>
+                    <p>Se exportar um ficheiro para outra localização, incluindo uma cloud, essa cópia deixa de estar sob o controlo do 4ever Scan e deve ser eliminada por si no serviço correspondente.</p>
+                    <p>O 4ever Scan não oferece criação de conta. Por isso, não existe uma conta de utilizador ou um conjunto de dados de conta para apagar. Para pedir esclarecimentos sobre qualquer contacto que nos envie, escreva para <a href="mailto:contato@eltonalvesribeirolda.com?subject=Elimina%C3%A7%C3%A3o%20de%20dados%20-%204ever%20Scan">contato@eltonalvesribeirolda.com</a>; eliminaremos a comunicação quando já não for necessária, salvo obrigação legal de conservação.</p>
+                </section>
+
+                <section id="seguranca">
+                    <h2>6. Segurança</h2>
+                    <p>Concebemos a app para reduzir a circulação dos seus documentos: o processamento principal é feito no dispositivo e não há sincronização automática com os nossos servidores. Deve manter o sistema operativo atualizado e utilizar as proteções de acesso do dispositivo.</p>
+                    <p>Nenhum método de armazenamento ou transmissão é totalmente seguro. Quando uma ação sua envia um ficheiro para um serviço externo, a segurança dessa transmissão e do destino depende também desse serviço.</p>
+                </section>
+
+                <section id="direitos">
+                    <h2>7. Os seus direitos</h2>
+                    <p>Dependendo da sua localização, pode ter direitos de acesso, correção, eliminação, oposição ou limitação do tratamento dos seus dados pessoais. Pode exercer esses direitos através do contacto indicado nesta política.</p>
+                    <p>Como os documentos são armazenados localmente e não ficam acessíveis para nós, a eliminação desses documentos é feita diretamente no dispositivo ou no serviço para onde os exportou.</p>
+                </section>
+
+                <section id="alteracoes">
+                    <h2>8. Alterações a esta política</h2>
+                    <p>Podemos atualizar esta política para refletir alterações na app, nos serviços utilizados ou na legislação aplicável. A versão publicada nesta página é a versão em vigor; a data no início da página indica a atualização mais recente.</p>
+                </section>
+            </article>
+
+            <aside class="toc" aria-label="Nesta política">
+                <strong>Nesta política</strong>
+                <a href="#responsavel">Responsável</a>
+                <a href="#dados">Dados a que acedemos</a>
+                <a href="#utilizacao">Utilização</a>
+                <a href="#partilha">Partilha</a>
+                <a href="#armazenamento">Retenção e eliminação</a>
+                <a href="#seguranca">Segurança</a>
+                <a href="#direitos">Os seus direitos</a>
+                <a href="#alteracoes">Alterações</a>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <span>© 2026 Elton Alves Ribeiro Lda</span>
+            <a href="mailto:contato@eltonalvesribeirolda.com">contato@eltonalvesribeirolda.com</a>
+        </div>
+    </footer>
+</body>
+</html>
