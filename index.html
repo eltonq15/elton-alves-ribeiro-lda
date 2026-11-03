@@ -581,9 +581,11 @@
       .hero-visual img {
         display: block;
         width: 100%;
-        aspect-ratio: 0.83;
-        object-fit: cover;
+        height: min(62vh, 600px);
+        min-height: 390px;
+        object-fit: contain;
         object-position: center top;
+        background: #101512;
         border-radius: 10px;
       }
 
@@ -787,6 +789,11 @@
         .hero-visual {
           justify-self: center;
           width: min(100%, 360px);
+        }
+
+        .hero-visual img {
+          height: 470px;
+          min-height: 0;
         }
 
         .features {
